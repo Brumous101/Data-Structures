@@ -1,0 +1,66 @@
+\hypertarget{classssuds_1_1_sorted_array_list}{}\doxysection{ssuds\+::Sorted\+Array\+List$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_sorted_array_list}\index{ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}}
+
+
+This is a test for the next line of code.  
+
+
+
+
+{\ttfamily \#include $<$sorted\+\_\+array\+\_\+list.\+h$>$}
+
+Inheritance diagram for ssuds\+::Sorted\+Array\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_sorted_array_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_afd2dc17eef48ce0ad7e12a3f280996ad}\label{classssuds_1_1_sorted_array_list_afd2dc17eef48ce0ad7e12a3f280996ad}} 
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list_afd2dc17eef48ce0ad7e12a3f280996ad}{Sorted\+Array\+List}} (Sorted\+Array\+List\+Type sort\+Type)
+\begin{DoxyCompactList}\small\item\em constructor for an already sorted list \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a1d5e1bdd3ff8af2889ca7cf3bd0cb10e}\label{classssuds_1_1_sorted_array_list_a1d5e1bdd3ff8af2889ca7cf3bd0cb10e}} 
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list_a1d5e1bdd3ff8af2889ca7cf3bd0cb10e}{Sorted\+Array\+List}} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}$<$ T $>$ \&A, Sorted\+Array\+List\+Type sort\+Type)
+\begin{DoxyCompactList}\small\item\em constructor that takes an unsorted list as an argument \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a56dc2fa839978e9bda6429cce0a88fee}\label{classssuds_1_1_sorted_array_list_a56dc2fa839978e9bda6429cce0a88fee}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a56dc2fa839978e9bda6429cce0a88fee}{add}} (T val)
+\begin{DoxyCompactList}\small\item\em Adds the element to the start of the array\+\_\+list and then sorts after the addition. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a598953ec76e2b36101aa2dbbf42a28e2}\label{classssuds_1_1_sorted_array_list_a598953ec76e2b36101aa2dbbf42a28e2}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a598953ec76e2b36101aa2dbbf42a28e2}{push\+\_\+back}} (T val)
+\begin{DoxyCompactList}\small\item\em A useless function they are overriding the parent functions because otherwise it would use the parents functions which are incorrect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_aaebb285fce915b5d54801ee1cd7bbde2}\label{classssuds_1_1_sorted_array_list_aaebb285fce915b5d54801ee1cd7bbde2}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_aaebb285fce915b5d54801ee1cd7bbde2}{insert}} (T val, int index)
+\begin{DoxyCompactList}\small\item\em A useless function they are overriding the parent functions because otherwise it would use the parents functions which are incorrect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a1a5a72db339976182c07b32e3a4032d6}\label{classssuds_1_1_sorted_array_list_a1a5a72db339976182c07b32e3a4032d6}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a1a5a72db339976182c07b32e3a4032d6}{sort}} ()
+\begin{DoxyCompactList}\small\item\em Bubble sort implementation to sort the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a3aed8e7b1548d732031fabc4d9430d88}\label{classssuds_1_1_sorted_array_list_a3aed8e7b1548d732031fabc4d9430d88}} 
+int \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a3aed8e7b1548d732031fabc4d9430d88}{find}} (T val, int start\+\_\+idx=0)
+\begin{DoxyCompactList}\small\item\em Binary search implementation to find a value with a given start index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a6e79261f08edc46db53858fb66443b3c}\label{classssuds_1_1_sorted_array_list_a6e79261f08edc46db53858fb66443b3c}} 
+bool \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a6e79261f08edc46db53858fb66443b3c}{out\+\_\+of\+\_\+order}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Determines if two elements are out of order based on which direction we want the list to be sorted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a8c30a83668966961748845895a6dd06d}\label{classssuds_1_1_sorted_array_list_a8c30a83668966961748845895a6dd06d}} 
+Sorted\+Array\+List\+Type \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a8c30a83668966961748845895a6dd06d}{m\+Type}}
+\begin{DoxyCompactList}\small\item\em This is the only variables that is exclusive to the child class. All variables we need for storing data are inherited from \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Sorted\+Array\+List$<$ T $>$}
+
+This is a test for the next line of code. 
+
+An \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} is similar to (but more simple than) std\+::vector. Behind the scenes is contains a dynamically created array of T objects. This array is resized periodically when we run out of capacity (currently by a fixed amount, although that could be changed to doubling, tripling, if desired -- that would increase the amortized efficiency, but would (drastically) increase the memory footprint). 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/sorted\+\_\+array\+\_\+list.\+h\end{DoxyCompactItemize}

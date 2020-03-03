@@ -1,0 +1,10 @@
+﻿  account.cpp
+  lab01_soln.cpp
+  manager.cpp
+  transaction.cpp
+  utility.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 253 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  lab01_soln.vcxproj -> D:\2020Sp\etec2101\labs\lab01_soln\build\..\bin\Release\lab01_soln.exe

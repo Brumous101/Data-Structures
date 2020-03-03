@@ -1,0 +1,96 @@
+\hypertarget{classssuds_1_1_array_list}{}\doxysection{ssuds\+::Array\+List$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_array_list}\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+
+
+A templated class for \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}.  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+list.\+h$>$}
+
+Inheritance diagram for ssuds\+::Array\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_array_list}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} is a container data structure that will iterate through the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_acc8c635fece5189238f20e4df1e9e899}\label{classssuds_1_1_array_list_acc8c635fece5189238f20e4df1e9e899}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_acc8c635fece5189238f20e4df1e9e899}{Array\+List}} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&other)
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a09a8017b51733753c018ad4e70ade2e1}\label{classssuds_1_1_array_list_a09a8017b51733753c018ad4e70ade2e1}} 
+int \mbox{\hyperlink{classssuds_1_1_array_list_a09a8017b51733753c018ad4e70ade2e1}{size}} ()
+\begin{DoxyCompactList}\small\item\em The getter to obtain the m\+Size variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a8b5630efb680996c89e6b45e2a70a79c}\label{classssuds_1_1_array_list_a8b5630efb680996c89e6b45e2a70a79c}} 
+int \mbox{\hyperlink{classssuds_1_1_array_list_a8b5630efb680996c89e6b45e2a70a79c}{capacity}} ()
+\begin{DoxyCompactList}\small\item\em The getter to obtain the m\+Capacity variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_aa272de64bbfbbb8c887c675c192e9b5f}\label{classssuds_1_1_array_list_aa272de64bbfbbb8c887c675c192e9b5f}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_aa272de64bbfbbb8c887c675c192e9b5f}{push\+\_\+back}} (T val)
+\begin{DoxyCompactList}\small\item\em The push\+\_\+back function that will add to the back of the array\+\_\+list and grow the memory. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a29d38b6e2574880f07422497f468ddd8}\label{classssuds_1_1_array_list_a29d38b6e2574880f07422497f468ddd8}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} \mbox{\hyperlink{classssuds_1_1_array_list_a29d38b6e2574880f07422497f468ddd8}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Points to the beginning of the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a807800c2ae6c98f36604c1e5a03ea8ca}\label{classssuds_1_1_array_list_a807800c2ae6c98f36604c1e5a03ea8ca}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} \mbox{\hyperlink{classssuds_1_1_array_list_a807800c2ae6c98f36604c1e5a03ea8ca}{end}} ()
+\begin{DoxyCompactList}\small\item\em Points to the end of the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ae1eba9a8e9a6fe95881808e199b6edf0}\label{classssuds_1_1_array_list_ae1eba9a8e9a6fe95881808e199b6edf0}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_ae1eba9a8e9a6fe95881808e199b6edf0}{Grow}} ()
+\begin{DoxyCompactList}\small\item\em Allocates more memory for the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a646adf15b9f1422f2a668f4d7ece8856}\label{classssuds_1_1_array_list_a646adf15b9f1422f2a668f4d7ece8856}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_a646adf15b9f1422f2a668f4d7ece8856}{Shrink}} ()
+\begin{DoxyCompactList}\small\item\em Deallocates memory from the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a54dca5fc11315310559accf2a5fec367}\label{classssuds_1_1_array_list_a54dca5fc11315310559accf2a5fec367}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_a54dca5fc11315310559accf2a5fec367}{insert}} (T element, int index)
+\begin{DoxyCompactList}\small\item\em Inserts an element into the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}\label{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}} 
+T \mbox{\hyperlink{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}{remove}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes an element from the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a29f9aaf226d5c6fde758546102150271}\label{classssuds_1_1_array_list_a29f9aaf226d5c6fde758546102150271}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_a29f9aaf226d5c6fde758546102150271}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Clears the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ae8d56d6489bfde7ba70070d0aaf629b5}\label{classssuds_1_1_array_list_ae8d56d6489bfde7ba70070d0aaf629b5}} 
+int \mbox{\hyperlink{classssuds_1_1_array_list_ae8d56d6489bfde7ba70070d0aaf629b5}{find}} (T element, int index=0)
+\begin{DoxyCompactList}\small\item\em Finds an element in an array\+\_\+list given a starting index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a2bcc51773c14c5ea335e07c5dae04025}\label{classssuds_1_1_array_list_a2bcc51773c14c5ea335e07c5dae04025}} 
+\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \& \mbox{\hyperlink{classssuds_1_1_array_list_a2bcc51773c14c5ea335e07c5dae04025}{operator=}} (\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&overload\+Equals\+Operator)
+\begin{DoxyCompactList}\small\item\em Overload for the equals operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_aa349456cfc3a6ebe8ac32cf5f983a928}\label{classssuds_1_1_array_list_aa349456cfc3a6ebe8ac32cf5f983a928}} 
+T \& \mbox{\hyperlink{classssuds_1_1_array_list_aa349456cfc3a6ebe8ac32cf5f983a928}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Overload for the brackets operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a3c89dd9111b4d15f22b4f538f6a1929d}\label{classssuds_1_1_array_list_a3c89dd9111b4d15f22b4f538f6a1929d}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_a3c89dd9111b4d15f22b4f538f6a1929d}{Array\+List}} (\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&a)
+\begin{DoxyCompactList}\small\item\em A constructor that accepts another array\+\_\+list as an argument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ae43c344eccee75213eb02e96ea3e300e}\label{classssuds_1_1_array_list_ae43c344eccee75213eb02e96ea3e300e}} 
+T $\ast$ \mbox{\hyperlink{classssuds_1_1_array_list_ae43c344eccee75213eb02e96ea3e300e}{m\+Data}}
+\begin{DoxyCompactList}\small\item\em Holds the data of a given type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_aad989b2e39f5ea46fe85499341139352}\label{classssuds_1_1_array_list_aad989b2e39f5ea46fe85499341139352}} 
+int \mbox{\hyperlink{classssuds_1_1_array_list_aad989b2e39f5ea46fe85499341139352}{m\+Size}}
+\begin{DoxyCompactList}\small\item\em Holds the length of the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ae115ebf93fded10801e4baedfc2518db}\label{classssuds_1_1_array_list_ae115ebf93fded10801e4baedfc2518db}} 
+int \mbox{\hyperlink{classssuds_1_1_array_list_ae115ebf93fded10801e4baedfc2518db}{m\+Capacity}}
+\begin{DoxyCompactList}\small\item\em Holds the amount of memory allocated to the array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ada48e5d2424643dfb137dcf6567eaef1}\label{classssuds_1_1_array_list_ada48e5d2424643dfb137dcf6567eaef1}} 
+const int \mbox{\hyperlink{classssuds_1_1_array_list_ada48e5d2424643dfb137dcf6567eaef1}{m\+Capacity\+Increase}} = 5
+\begin{DoxyCompactList}\small\item\em The variable used to increase our dynamically allocated array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Array\+List$<$ T $>$}
+
+A templated class for \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/array\+\_\+list.\+h\end{DoxyCompactItemize}

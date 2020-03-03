@@ -1,0 +1,49 @@
+\hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator}{}\doxysection{ssuds\+::Array\+List$<$ T $>$\+::Array\+List\+Iterator Class Reference}
+\label{classssuds_1_1_array_list_1_1_array_list_iterator}\index{ssuds::ArrayList$<$ T $>$::ArrayListIterator@{ssuds::ArrayList$<$ T $>$::ArrayListIterator}}
+
+
+The \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} is a container data structure that will iterate through the array.  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a4e5e221486ac5814c7e9242f59909ec8}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a4e5e221486ac5814c7e9242f59909ec8}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a4e5e221486ac5814c7e9242f59909ec8}{Array\+List\+Iterator}} (\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&a, int p)
+\begin{DoxyCompactList}\small\item\em Points to where we are iterating. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_aa8cc57ec7d142110e9aa759686509f9f}\label{classssuds_1_1_array_list_1_1_array_list_iterator_aa8cc57ec7d142110e9aa759686509f9f}} 
+bool \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_aa8cc57ec7d142110e9aa759686509f9f}{operator!=}} (const \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} \&other)
+\begin{DoxyCompactList}\small\item\em Make sure we are at the correct index. Also need to make sure it isn\textquotesingle{}t the same array. We can do this by comparing addresses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a94cb8cbdefb474da68d0d55aa16d5f6f}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a94cb8cbdefb474da68d0d55aa16d5f6f}} 
+bool \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a94cb8cbdefb474da68d0d55aa16d5f6f}{operator==}} (const \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} \&other)
+\begin{DoxyCompactList}\small\item\em Make sure we are at the correct index. Also need to make sure it isn\textquotesingle{}t the same array. We can do this by comparing addresses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a67e47d4c1b94bd297f63e7f1d11e02e3}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a67e47d4c1b94bd297f63e7f1d11e02e3}} 
+T \& \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a67e47d4c1b94bd297f63e7f1d11e02e3}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Overloading the pointer (dereference) operator. Allows to change the value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_ad5773c320087bba4872892832005320e}\label{classssuds_1_1_array_list_1_1_array_list_iterator_ad5773c320087bba4872892832005320e}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_ad5773c320087bba4872892832005320e}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em overiding the ++ operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a1832dcccc6e239660121f4fac368992b}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a1832dcccc6e239660121f4fac368992b}} 
+\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \& \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a1832dcccc6e239660121f4fac368992b}{m\+Array}}
+\begin{DoxyCompactList}\small\item\em The location of our array\+\_\+list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a7ae5e251297d9feafcd74613382fd240}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a7ae5e251297d9feafcd74613382fd240}} 
+int \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a7ae5e251297d9feafcd74613382fd240}{m\+Pos}}
+\begin{DoxyCompactList}\small\item\em The indexing variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Array\+List$<$ T $>$\+::\+Array\+List\+Iterator}
+
+The \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} is a container data structure that will iterate through the array. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/array\+\_\+list.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (..\tmp\Release\) contains files shared from another project (Template.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Bouncer.cpp
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 3\src\Bouncer.cpp(13,1): error C2059: syntax error: '{'
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 3\src\Bouncer.cpp(28,2): error C2065: 'position': undeclared identifier
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 3\src\Bouncer.cpp(28,15): error C2065: 'old_position': undeclared identifier
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 3\src\Bouncer.cpp(29,5): error C2065: 'position': undeclared identifier
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 3\src\Bouncer.cpp(29,18): error C2065: 'old_position': undeclared identifier
+  main.cpp
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 3\src\main.cpp(17,50): error C2661: 'ssuds::Bouncer::Bouncer': no overloaded function takes 4 arguments

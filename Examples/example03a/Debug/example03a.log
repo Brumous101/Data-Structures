@@ -1,0 +1,3 @@
+﻿  example03a.cpp
+D:\2020sp\etec2101\in_class_pm\example03a\example03a.cpp(14,23): warning C4018: '<': signed/unsigned mismatch
+  example03a.vcxproj -> D:\2020sp\etec2101\in_class_pm\example03a\Debug\example03a.exe

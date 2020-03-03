@@ -1,0 +1,130 @@
+//Name: Kyle Johnson
+//Class: ETEC2101
+//Section: 01
+//Assignment: 2
+#include <iostream>
+#include <string>			// contains getline function (among other things)
+#include <array_list.h>
+/*
+Recall:
+//This would be called passing by value
+void func1(int x)
+{
+	x++
+}
+//-------------------------------------
+//This would be pass-by-ptr (more of a C way?)
+void func2(int * x)
+{
+	(*x)++;
+}
+//-------------------------------------
+//The more C++ way of doing it would be 
+void func3(int &x)
+{
+	x++;
+}
+//-------------------------------------
+a=10;
+func1(a);    //a is 10
+func2(&a);   //a is 11
+func3(a);    //a is 12
+func2(NULL); //ERROR!
+func3(NULL); //won't compile
+//-------------------------------------
+
+Note:
+	Use the const qualifier anytime that we arent making changes to the attributes getters are good ideas for that because we arent actually making, setters arent
+*/
+
+
+int main()
+{
+
+	// Testing creation and basic methods
+	ssuds::ArrayList<std::string> slist;
+	std::cout << slist.size() << std::endl;							// 0
+	std::cout << slist.capacity() << std::endl;						// 5 
+	//Needs to initialize an array with 5 available strings and has nothing in it to start
+	
+	slist.push_back("Abe");
+	slist.push_back("Barb");
+	slist.push_back("Carl");
+	slist.push_back("Doug");
+	slist.push_back("Erin");
+	slist.push_back("Frank");										// If in a debug build, we should see "[[GROW]]" here
+	std::cout << slist << std::endl;								// [Abe, Barb, Carl, Doug, Erin, Frank]    I'll be grading spaces and commas too!
+	std::cout << slist.size() << std::endl;				        	// 6
+	std::cout << slist.capacity() << std::endl;						// 10 
+
+	
+	// Testing index accessor
+	std::cout << "slist" << std::endl << "=====" << std::endl;		// slist
+	for (int i = 0; i < (int)slist.size(); i++)						// =====
+		std::cout << "\t" << slist[i] << std::endl;					//     Abe
+																	//     Barb
+																	//     Carl
+																	//     Doug
+																	//     Erin
+																	//     Frank
+	// ... if uncommented, these lines should throw std::out_of_range exceptions.  Once that's working, uncomment them
+	slist[-5];//Operator overload
+	slist[200];
+
+	
+	// Testing insert
+	slist.insert("Xavier", 2);
+	std::cout << slist << std::endl;								// [Abe, Barb, Xavier, Carl, Doug, Erin, Frank]
+	
+
+	// Testing find mechanisms
+	slist.push_back("Barb");
+	slist.push_back("Gina");
+	slist.push_back("Barb");
+	std::cout << slist << std::endl;								// [Abe, Barb, Xavier, Carl, Doug, Erin, Frank, Barb, Gina, Barb]
+	std::cout << "Carl is at " << slist.find("Carl") << std::endl;	// Carl is at 3
+	std::cout << "Barbs are at..." << std::endl;					// Barbs are at...
+	int find_index = 0;												//     index=1
+	while (1)														//     index=7
+	{																//     index=9
+		find_index = slist.find("Barb", find_index);
+		if (find_index >= 0)
+			std::cout << "\tindex=" << find_index << std::endl;
+		else
+			break;
+		// Add one, so we start looking for more Barb's at the index after the one we just found
+		find_index++;
+	}
+	
+	// Testing remove
+	slist.remove(7);
+	slist.remove(8);
+	std::cout << slist << std::endl;								// [Abe, Barb, Xavier, Carl, Doug, Erin, Frank, Gina]
+	// ... if uncommented, these lines should throw std::out_of_range exceptions.  Once that's working, uncomment them
+	//slist.remove(200);
+	
+	// Testing copy mechanisms
+	ssuds::ArrayList<std::string> slist_copy1;
+	slist_copy1.push_back("I'm going to get deleted on the next line");
+	slist_copy1 = slist;
+	ssuds::ArrayList<std::string> slist_copy2(slist);
+	slist.clear();
+	std::cout << slist.size() << std::endl;							// 0
+	std::cout << slist.capacity() << std::endl;						// 5 
+	std::cout << slist_copy1 << std::endl;							// [Abe, Barb, Xavier, Carl, Doug, Erin, Frank, Gina]
+	slist_copy1.clear();
+	std::cout << slist_copy2 << std::endl;							// [Abe, Barb, Xavier, Carl, Doug, Erin, Frank, Gina]
+
+	
+	// Just testing another type of ArrayList
+	
+	ssuds::ArrayList<float> flist;
+	flist.push_back(1.1f);
+	flist.push_back(2.2f);
+	// Note: this int and double constant are silenty cast to floats.
+	// You should get a warning on the second one (then you can change it to a float)
+	flist.push_back(3);
+	flist.push_back(4.4f);
+	// Despite the 3 show by cout, a 3.0f is being store in the ArrayList
+	std::cout << "flist = " << flist << std::endl;					// [1.1, 2.2, 3, 4.4]
+}

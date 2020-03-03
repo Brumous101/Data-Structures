@@ -1,0 +1,62 @@
+\hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator}{}\doxysection{ssuds\+::Linked\+List$<$ T $>$\+::Linked\+List\+Iterator Class Reference}
+\label{classssuds_1_1_linked_list_1_1_linked_list_iterator}\index{ssuds::LinkedList$<$ T $>$::LinkedListIterator@{ssuds::LinkedList$<$ T $>$::LinkedListIterator}}
+
+
+The \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} class.  
+
+
+
+
+{\ttfamily \#include $<$linked\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_a26746a848ea3afee0ae947c88f6749c7}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_a26746a848ea3afee0ae947c88f6749c7}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_a26746a848ea3afee0ae947c88f6749c7}{Linked\+List\+Iterator}} (const \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}} \&v, bool is\+\_\+forward)
+\begin{DoxyCompactList}\small\item\em Main (only) constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_a3b3c9f904781f0ff2019d809f20d0eb0}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_a3b3c9f904781f0ff2019d809f20d0eb0}} 
+T \& \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_a3b3c9f904781f0ff2019d809f20d0eb0}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current element\textquotesingle{}s value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_ae4c4442dc4b48e1d8abe8af011edf896}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_ae4c4442dc4b48e1d8abe8af011edf896}} 
+void \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_ae4c4442dc4b48e1d8abe8af011edf896}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Iterates (advances) the iterator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_adc72b8e2867b8c45fbe8557b8eba50db}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_adc72b8e2867b8c45fbe8557b8eba50db}} 
+bool \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_adc72b8e2867b8c45fbe8557b8eba50db}{operator==}} (const \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Are we equal to another iterator? We are if it\textquotesingle{}s the same vector and if the position is the same. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_ad5b2305c0a0162bb648ce0c9a1db22b6}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_ad5b2305c0a0162bb648ce0c9a1db22b6}} 
+bool \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_ad5b2305c0a0162bb648ce0c9a1db22b6}{operator!=}} (const \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Are we not equal to the given iterator (just the reverse of ==)...not sure why we need both... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_a1fd5739bbdc8f843320270c28653f74d}{m\+Is\+Forward}}
+\begin{DoxyCompactList}\small\item\em The reference to the vector we\textquotesingle{}re iterating through. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_aca9b3ff4f73675c072ca80f69615164f}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_aca9b3ff4f73675c072ca80f69615164f}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1node}{node}} $\ast$ \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator_aca9b3ff4f73675c072ca80f69615164f}{cur}}
+\begin{DoxyCompactList}\small\item\em The node pointer that will point to the current node in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Linked\+List$<$ T $>$\+::\+Linked\+List\+Iterator}
+
+The \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} class. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classssuds_1_1_linked_list_1_1_linked_list_iterator_a1fd5739bbdc8f843320270c28653f74d}\label{classssuds_1_1_linked_list_1_1_linked_list_iterator_a1fd5739bbdc8f843320270c28653f74d}} 
+\index{ssuds::LinkedList$<$ T $>$::LinkedListIterator@{ssuds::LinkedList$<$ T $>$::LinkedListIterator}!mIsForward@{mIsForward}}
+\index{mIsForward@{mIsForward}!ssuds::LinkedList$<$ T $>$::LinkedListIterator@{ssuds::LinkedList$<$ T $>$::LinkedListIterator}}
+\doxysubsubsection{\texorpdfstring{mIsForward}{mIsForward}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classssuds_1_1_linked_list}{ssuds\+::\+Linked\+List}}$<$ T $>$\+::Linked\+List\+Iterator\+::m\+Is\+Forward\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The reference to the vector we\textquotesingle{}re iterating through. 
+
+If true, we increment m\+Position when we iterate. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/linked\+\_\+list.\+h\end{DoxyCompactItemize}

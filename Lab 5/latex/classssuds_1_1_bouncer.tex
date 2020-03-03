@@ -1,0 +1,71 @@
+\hypertarget{classssuds_1_1_bouncer}{}\doxysection{ssuds\+::Bouncer Class Reference}
+\label{classssuds_1_1_bouncer}\index{ssuds::Bouncer@{ssuds::Bouncer}}
+
+
+The \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} class. Provides graphics for the bouncing object.  
+
+
+
+
+{\ttfamily \#include $<$bouncer.\+h$>$}
+
+Inheritance diagram for ssuds\+::Bouncer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_bouncer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_af52fc1cb6ad6579b5b6db6222181ccbb}\label{classssuds_1_1_bouncer_af52fc1cb6ad6579b5b6db6222181ccbb}} 
+\mbox{\hyperlink{classssuds_1_1_bouncer_af52fc1cb6ad6579b5b6db6222181ccbb}{Bouncer}} (float center\+\_\+x, float center\+\_\+y, float radius, float vel\+\_\+x=0.\+0f, float vel\+\_\+y=0.\+0f)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} constructor that is passed arguments of an existing bouncer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a4682fc9d69f870fe4fa0b760498ba4e5}\label{classssuds_1_1_bouncer_a4682fc9d69f870fe4fa0b760498ba4e5}} 
+\mbox{\hyperlink{classssuds_1_1_bouncer_a4682fc9d69f870fe4fa0b760498ba4e5}{Bouncer}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a2e2b57dd32f2a3fcc5b010cb7a97e796}\label{classssuds_1_1_bouncer_a2e2b57dd32f2a3fcc5b010cb7a97e796}} 
+void \mbox{\hyperlink{classssuds_1_1_bouncer_a2e2b57dd32f2a3fcc5b010cb7a97e796}{update}} (float dt, int width, int height)
+\begin{DoxyCompactList}\small\item\em updates the bouncer location \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aea2ff2685a42b3f37b31dd7865152706}\label{classssuds_1_1_bouncer_aea2ff2685a42b3f37b31dd7865152706}} 
+void \mbox{\hyperlink{classssuds_1_1_bouncer_aea2ff2685a42b3f37b31dd7865152706}{draw\+Bounces}} (sf\+::\+Render\+Window \&win, sf\+::\+Font \&font)
+\begin{DoxyCompactList}\small\item\em Draws the text on the bounder. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aca8bb1ae1fd85ef7295ceefa5a6fd863}\label{classssuds_1_1_bouncer_aca8bb1ae1fd85ef7295ceefa5a6fd863}} 
+sf\+::\+Vector2f \mbox{\hyperlink{classssuds_1_1_bouncer_aca8bb1ae1fd85ef7295ceefa5a6fd863}{get\+Velocity}} ()
+\begin{DoxyCompactList}\small\item\em Gets the velocity of the bouncer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a64a14a5c03b607f8a3b8d422d21446ef}\label{classssuds_1_1_bouncer_a64a14a5c03b607f8a3b8d422d21446ef}} 
+sf\+::\+Vector2f \mbox{\hyperlink{classssuds_1_1_bouncer_a64a14a5c03b607f8a3b8d422d21446ef}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the position of the bouncer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_afe7f8df10834601e14404d3046d56563}\label{classssuds_1_1_bouncer_afe7f8df10834601e14404d3046d56563}} 
+bool \mbox{\hyperlink{classssuds_1_1_bouncer_afe7f8df10834601e14404d3046d56563}{operator$>$}} (const \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} \&b) const
+\begin{DoxyCompactList}\small\item\em Compares the speeds of the bouncers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aec73db25c65dd4d0f2b11945d8def1d8}\label{classssuds_1_1_bouncer_aec73db25c65dd4d0f2b11945d8def1d8}} 
+bool \mbox{\hyperlink{classssuds_1_1_bouncer_aec73db25c65dd4d0f2b11945d8def1d8}{operator$<$}} (const \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} \&b) const
+\begin{DoxyCompactList}\small\item\em Compares the speeds of the bouncers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_afffe3be534b592137257f8317c24bcba}\label{classssuds_1_1_bouncer_afffe3be534b592137257f8317c24bcba}} 
+sf\+::\+Vector2f \mbox{\hyperlink{classssuds_1_1_bouncer_afffe3be534b592137257f8317c24bcba}{m\+Velocity}}
+\begin{DoxyCompactList}\small\item\em Declares a two-\/direction velocity for the bouncer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aac9abece6b3859da45ff0bbe4aa2b882}\label{classssuds_1_1_bouncer_aac9abece6b3859da45ff0bbe4aa2b882}} 
+sf\+::\+Vector2f \mbox{\hyperlink{classssuds_1_1_bouncer_aac9abece6b3859da45ff0bbe4aa2b882}{m\+Pos}}
+\begin{DoxyCompactList}\small\item\em Initializes the center of the bouncer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a48771ad9a1a9e0aadf840493653273f1}\label{classssuds_1_1_bouncer_a48771ad9a1a9e0aadf840493653273f1}} 
+int \mbox{\hyperlink{classssuds_1_1_bouncer_a48771ad9a1a9e0aadf840493653273f1}{m\+Num\+Bounces}}
+\begin{DoxyCompactList}\small\item\em Initializes the bouncers number of bounces. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_af4f873779bbafe17b2f2def8b553640d}\label{classssuds_1_1_bouncer_af4f873779bbafe17b2f2def8b553640d}} 
+float \mbox{\hyperlink{classssuds_1_1_bouncer_af4f873779bbafe17b2f2def8b553640d}{m\+Radius}}
+\begin{DoxyCompactList}\small\item\em Initializes the bouncer with a radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} class. Provides graphics for the bouncing object. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/bouncer.\+h\item 
+src/bouncer.\+cpp\end{DoxyCompactItemize}
