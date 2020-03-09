@@ -1,0 +1,123 @@
+\hypertarget{classssuds_1_1_linked_list}{}\section{ssuds\+::Linked\+List$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_linked_list}\index{ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}}
+
+
+{\ttfamily \#include $<$linked\+\_\+list.\+h$>$}
+
+Inheritance diagram for ssuds\+::Linked\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_linked_list}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}}
+\begin{DoxyCompactList}\small\item\em The iterator used to traverse our linked list. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classssuds_1_1_linked_list_1_1node}{node}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_ad9bf044b5580f2a5507fc0a4c6e9c887}\label{classssuds_1_1_linked_list_ad9bf044b5580f2a5507fc0a4c6e9c887}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_ad9bf044b5580f2a5507fc0a4c6e9c887}{Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em The default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_a1e4e00ed5aba2e52cd30cab344094bc1}\label{classssuds_1_1_linked_list_a1e4e00ed5aba2e52cd30cab344094bc1}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_a1e4e00ed5aba2e52cd30cab344094bc1}{Linked\+List}} (const \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}} \&L)
+\begin{DoxyCompactList}\small\item\em Copy constructor. Makes a deep copy of the given \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_aee10e508a0b0319531f22498135f00f9}\label{classssuds_1_1_linked_list_aee10e508a0b0319531f22498135f00f9}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_aee10e508a0b0319531f22498135f00f9}{$\sim$\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classssuds_1_1_linked_list_a00b8ec9b1a82165bd18422a18671a375}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\item 
+\mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}} \& \mbox{\hyperlink{classssuds_1_1_linked_list_a1bc1219e0c1598c9d8ff24a617b99f40}{operator=}} (const \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}} \&L)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_a5db25fa94ebc906c2ec5a4bcd430da38}\label{classssuds_1_1_linked_list_a5db25fa94ebc906c2ec5a4bcd430da38}} 
+void \mbox{\hyperlink{classssuds_1_1_linked_list_a5db25fa94ebc906c2ec5a4bcd430da38}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Resets the linked list back to its original state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classssuds_1_1_linked_list_ad3d8caa4cbf9df3240578fa42868adf8}{find}} (T val, int start\+\_\+index=0) const
+\item 
+void \mbox{\hyperlink{classssuds_1_1_linked_list_ac9d11d83d9491a618575a9c50b8e2f2e}{insert}} (const T \&item, int index)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_a36fa3d3dd5e7d7cdd96e116ae3d8b276}\label{classssuds_1_1_linked_list_a36fa3d3dd5e7d7cdd96e116ae3d8b276}} 
+void \mbox{\hyperlink{classssuds_1_1_linked_list_a36fa3d3dd5e7d7cdd96e116ae3d8b276}{push\+\_\+back}} (T val)
+\begin{DoxyCompactList}\small\item\em Adds a new node containing this data to the end of the linked list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_a050e2ac41033a04b990c4ceb7f29d5ed}\label{classssuds_1_1_linked_list_a050e2ac41033a04b990c4ceb7f29d5ed}} 
+void \mbox{\hyperlink{classssuds_1_1_linked_list_a050e2ac41033a04b990c4ceb7f29d5ed}{push\+\_\+front}} (T val)
+\begin{DoxyCompactList}\small\item\em Adds a new node containing this data to the beginning of the linked list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_afca55993b7e531c4f89d0d787482af5b}\label{classssuds_1_1_linked_list_afca55993b7e531c4f89d0d787482af5b}} 
+T \mbox{\hyperlink{classssuds_1_1_linked_list_afca55993b7e531c4f89d0d787482af5b}{remove}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes the node at the given \char`\"{}position\char`\"{}. Getting to that position is costly. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classssuds_1_1_linked_list_adb7155ceb5a5da5551cb080e3c229195}{size}} () const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_ad3559cd0af6c9cf13fe03d0c1e164145}\label{classssuds_1_1_linked_list_ad3559cd0af6c9cf13fe03d0c1e164145}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} \mbox{\hyperlink{classssuds_1_1_linked_list_ad3559cd0af6c9cf13fe03d0c1e164145}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Returns an iterator to the beginning of the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_ac2f6bc415ab03bd173a9d72184bd7bf2}\label{classssuds_1_1_linked_list_ac2f6bc415ab03bd173a9d72184bd7bf2}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} \mbox{\hyperlink{classssuds_1_1_linked_list_ac2f6bc415ab03bd173a9d72184bd7bf2}{rbegin}} () const
+\begin{DoxyCompactList}\small\item\em Returns a reverse iterator starting at the end of the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_aef5c9df067fff37d377ad142df3f7f92}\label{classssuds_1_1_linked_list_aef5c9df067fff37d377ad142df3f7f92}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1_linked_list_iterator}{Linked\+List\+Iterator}} \mbox{\hyperlink{classssuds_1_1_linked_list_aef5c9df067fff37d377ad142df3f7f92}{end}} () const
+\begin{DoxyCompactList}\small\item\em Returns a \char`\"{}sentinel\char`\"{} value -- if an iterator is equal to this, we\textquotesingle{}re done traversing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_aba527942566fb6e51a44a7f9f87ba498}\label{classssuds_1_1_linked_list_aba527942566fb6e51a44a7f9f87ba498}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1node}{node}} $\ast$ \mbox{\hyperlink{classssuds_1_1_linked_list_aba527942566fb6e51a44a7f9f87ba498}{m\+Start}}
+\begin{DoxyCompactList}\small\item\em This is the pointer to the first node in the linked list (N\+U\+LL if the list is empty) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_a15aa95a40bf006d5f3c637fa0aed6d01}\label{classssuds_1_1_linked_list_a15aa95a40bf006d5f3c637fa0aed6d01}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list_1_1node}{node}} $\ast$ \mbox{\hyperlink{classssuds_1_1_linked_list_a15aa95a40bf006d5f3c637fa0aed6d01}{m\+End}}
+\begin{DoxyCompactList}\small\item\em This is the pointer to the last node in the linked list (N\+U\+LL if the list is empty) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_linked_list_aaafa0f724155d932f915cb9c816ef2a0}\label{classssuds_1_1_linked_list_aaafa0f724155d932f915cb9c816ef2a0}} 
+unsigned int \mbox{\hyperlink{classssuds_1_1_linked_list_aaafa0f724155d932f915cb9c816ef2a0}{m\+Size}}
+\begin{DoxyCompactList}\small\item\em The number of elements in the list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Linked\+List$<$ T $>$}
+
+A \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}} is a collection of non-\/contiguous nodes. To get to a certain spot, you must traverse the list. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classssuds_1_1_linked_list_ad3d8caa4cbf9df3240578fa42868adf8}\label{classssuds_1_1_linked_list_ad3d8caa4cbf9df3240578fa42868adf8}} 
+\index{ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}!find@{find}}
+\index{find@{find}!ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \mbox{\hyperlink{classssuds_1_1_linked_list}{ssuds\+::\+Linked\+List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{T}]{val,  }\item[{int}]{start\+\_\+index = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the first occurrence of the given value starting at the given \char`\"{}index\char`\"{} Since we can\textquotesingle{}t do random-\/access, there\textquotesingle{}s some extra overhead with this method (compared to \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}) to get to that initial spot \mbox{\Hypertarget{classssuds_1_1_linked_list_ac9d11d83d9491a618575a9c50b8e2f2e}\label{classssuds_1_1_linked_list_ac9d11d83d9491a618575a9c50b8e2f2e}} 
+\index{ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classssuds_1_1_linked_list}{ssuds\+::\+Linked\+List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{item,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inserts the given value at the currently occupied spot. There\textquotesingle{}s some extra overhead here to get to the given spot \mbox{\Hypertarget{classssuds_1_1_linked_list_a1bc1219e0c1598c9d8ff24a617b99f40}\label{classssuds_1_1_linked_list_a1bc1219e0c1598c9d8ff24a617b99f40}} 
+\index{ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}\& \mbox{\hyperlink{classssuds_1_1_linked_list}{ssuds\+::\+Linked\+List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}$<$ T $>$ \&}]{L }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Replaces this linked list with a copy of the data in the other \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}. This {\itshape should} work even if the (silly) user assigns a \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}} to itself \mbox{\Hypertarget{classssuds_1_1_linked_list_a00b8ec9b1a82165bd18422a18671a375}\label{classssuds_1_1_linked_list_a00b8ec9b1a82165bd18422a18671a375}} 
+\index{ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \mbox{\hyperlink{classssuds_1_1_linked_list}{ssuds\+::\+Linked\+List}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets an element at the given \char`\"{}position\char`\"{}. Note\+: since \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}\textquotesingle{}s don\textquotesingle{}t support random-\/access (unlike \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}), this is a costly operation \mbox{\Hypertarget{classssuds_1_1_linked_list_adb7155ceb5a5da5551cb080e3c229195}\label{classssuds_1_1_linked_list_adb7155ceb5a5da5551cb080e3c229195}} 
+\index{ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}!size@{size}}
+\index{size@{size}!ssuds::LinkedList$<$ T $>$@{ssuds::LinkedList$<$ T $>$}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \mbox{\hyperlink{classssuds_1_1_linked_list}{ssuds\+::\+Linked\+List}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the number of elements in the linked list. Don\textquotesingle{}t implement it this way, but interesting challenge\+: how would you get the size of a linked-\/list if you weren\textquotesingle{}t storing our m\+Size int? 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/linked\+\_\+list.\+h\end{DoxyCompactItemize}

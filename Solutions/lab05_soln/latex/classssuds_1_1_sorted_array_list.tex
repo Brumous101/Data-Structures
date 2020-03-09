@@ -1,0 +1,82 @@
+\hypertarget{classssuds_1_1_sorted_array_list}{}\section{ssuds\+::Sorted\+Array\+List$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_sorted_array_list}\index{ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}}
+Inheritance diagram for ssuds\+::Sorted\+Array\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_sorted_array_list}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_ae0dc9b51d8787793124fd91b603c5518}\label{classssuds_1_1_sorted_array_list_ae0dc9b51d8787793124fd91b603c5518}} 
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list_ae0dc9b51d8787793124fd91b603c5518}{Sorted\+Array\+List}} (\mbox{\hyperlink{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}{Sorted\+Array\+List\+Type}} tp)
+\begin{DoxyCompactList}\small\item\em Basic constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a7adca3d62191f34a550fc3f650bf00ef}\label{classssuds_1_1_sorted_array_list_a7adca3d62191f34a550fc3f650bf00ef}} 
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list_a7adca3d62191f34a550fc3f650bf00ef}{Sorted\+Array\+List}} (const \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor -- make a copy of the other guy. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_abc4236f4e1d5b012643b6f180950bd48}\label{classssuds_1_1_sorted_array_list_abc4236f4e1d5b012643b6f180950bd48}} 
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list_abc4236f4e1d5b012643b6f180950bd48}{Sorted\+Array\+List}} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}$<$ T $>$ \&other, \mbox{\hyperlink{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}{Sorted\+Array\+List\+Type}} tp)
+\begin{DoxyCompactList}\small\item\em Copy constructor for (non-\/sorted) \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}} \& \mbox{\hyperlink{classssuds_1_1_sorted_array_list_abdc8e1844f87e66c76cd0c925f8a7ebd}{operator=}} (const \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}} \&other)
+\item 
+int \mbox{\hyperlink{classssuds_1_1_sorted_array_list_afab18886a6a2b3114311daa7de97ec60}{find}} (const T \&val, int start\+\_\+index=0) const
+\item 
+int \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a98d8dd6fbe58d224abea6c581a9a1398}{add}} (T item)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_aaebb285fce915b5d54801ee1cd7bbde2}\label{classssuds_1_1_sorted_array_list_aaebb285fce915b5d54801ee1cd7bbde2}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_aaebb285fce915b5d54801ee1cd7bbde2}{insert}} (T val, int index)
+\begin{DoxyCompactList}\small\item\em Re-\/route the insert method to add so we preserve the in-\/order aspect. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a53a43854b778c121d20c7b10c2c0ee5d}\label{classssuds_1_1_sorted_array_list_a53a43854b778c121d20c7b10c2c0ee5d}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a53a43854b778c121d20c7b10c2c0ee5d}{push\+\_\+back}} (T item)
+\begin{DoxyCompactList}\small\item\em Re-\/route the push\+\_\+back method to add so we preserve the in-\/order aspect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a6e79261f08edc46db53858fb66443b3c}{out\+\_\+of\+\_\+order}} (int i, int j)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a4b4e9c2c3a8e465f01805a718e25b8dd}\label{classssuds_1_1_sorted_array_list_a4b4e9c2c3a8e465f01805a718e25b8dd}} 
+void \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a4b4e9c2c3a8e465f01805a718e25b8dd}{swap}} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Swaps the elements at position i and j. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a8c30a83668966961748845895a6dd06d}\label{classssuds_1_1_sorted_array_list_a8c30a83668966961748845895a6dd06d}} 
+\mbox{\hyperlink{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}{Sorted\+Array\+List\+Type}} \mbox{\hyperlink{classssuds_1_1_sorted_array_list_a8c30a83668966961748845895a6dd06d}{m\+Type}}
+\begin{DoxyCompactList}\small\item\em The type of \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a98d8dd6fbe58d224abea6c581a9a1398}\label{classssuds_1_1_sorted_array_list_a98d8dd6fbe58d224abea6c581a9a1398}} 
+\index{ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}!add@{add}}
+\index{add@{add}!ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{ssuds\+::\+Sorted\+Array\+List}}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds the element to its correct spot in the \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}}. The index it was inserted at is returned. \mbox{\Hypertarget{classssuds_1_1_sorted_array_list_afab18886a6a2b3114311daa7de97ec60}\label{classssuds_1_1_sorted_array_list_afab18886a6a2b3114311daa7de97ec60}} 
+\index{ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}!find@{find}}
+\index{find@{find}!ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{ssuds\+::\+Sorted\+Array\+List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{const T \&}]{val,  }\item[{int}]{start\+\_\+index = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the first occurrence of the given index, starting at the given index. -\/1 is returned if that item can\textquotesingle{}t be found. Uses the binary-\/search algorithm. \mbox{\Hypertarget{classssuds_1_1_sorted_array_list_abdc8e1844f87e66c76cd0c925f8a7ebd}\label{classssuds_1_1_sorted_array_list_abdc8e1844f87e66c76cd0c925f8a7ebd}} 
+\index{ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}}\& \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{ssuds\+::\+Sorted\+Array\+List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method is called if the uses says a = b; where a and b are Array\+Lists of the same template type. It makes a copy of b. \mbox{\Hypertarget{classssuds_1_1_sorted_array_list_a6e79261f08edc46db53858fb66443b3c}\label{classssuds_1_1_sorted_array_list_a6e79261f08edc46db53858fb66443b3c}} 
+\index{ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}!out\_of\_order@{out\_of\_order}}
+\index{out\_of\_order@{out\_of\_order}!ssuds::SortedArrayList$<$ T $>$@{ssuds::SortedArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{out\_of\_order()}{out\_of\_order()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{ssuds\+::\+Sorted\+Array\+List}}$<$ T $>$\+::out\+\_\+of\+\_\+order (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+Are the elements at these two spots out of order? For example, if increasing and m\+Data\mbox{[}i\mbox{]} $>$ m\+Data\mbox{[}j\mbox{]}, the result will be true. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/sorted\+\_\+array\+\_\+list.\+h\end{DoxyCompactItemize}

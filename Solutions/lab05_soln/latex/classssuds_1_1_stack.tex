@@ -1,0 +1,38 @@
+\hypertarget{classssuds_1_1_stack}{}\section{ssuds\+::Stack$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_stack}\index{ssuds::Stack$<$ T $>$@{ssuds::Stack$<$ T $>$}}
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_stack_af4c17b8bbc88dfa4bed73d902a52068f}\label{classssuds_1_1_stack_af4c17b8bbc88dfa4bed73d902a52068f}} 
+void \mbox{\hyperlink{classssuds_1_1_stack_af4c17b8bbc88dfa4bed73d902a52068f}{push}} (T val)
+\begin{DoxyCompactList}\small\item\em Adds the given element to the beginning of the underlying list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_stack_a616d94b99a468e3c06b725f86c202e47}\label{classssuds_1_1_stack_a616d94b99a468e3c06b725f86c202e47}} 
+T \mbox{\hyperlink{classssuds_1_1_stack_a616d94b99a468e3c06b725f86c202e47}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the first element in the underlying list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_stack_a2e088afa10d964bb76121660100d5d0a}\label{classssuds_1_1_stack_a2e088afa10d964bb76121660100d5d0a}} 
+T \& \mbox{\hyperlink{classssuds_1_1_stack_a2e088afa10d964bb76121660100d5d0a}{peek}} ()
+\begin{DoxyCompactList}\small\item\em Returns a reference to the next item to be popped, or raises an execption if the stack is empty. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_stack_ac77ccba39cac8685c780806ae8e86b3f}\label{classssuds_1_1_stack_ac77ccba39cac8685c780806ae8e86b3f}} 
+bool \mbox{\hyperlink{classssuds_1_1_stack_ac77ccba39cac8685c780806ae8e86b3f}{empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if this stack is empty. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_stack_a87dfe9298574e9d29dbbc427515b6d81}\label{classssuds_1_1_stack_a87dfe9298574e9d29dbbc427515b6d81}} 
+\mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}$<$ T $>$ \mbox{\hyperlink{classssuds_1_1_stack_a87dfe9298574e9d29dbbc427515b6d81}{m\+List}}
+\begin{DoxyCompactList}\small\item\em The \char`\"{}contained\char`\"{} linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Stack$<$ T $>$}
+
+A \mbox{\hyperlink{classssuds_1_1_stack}{Stack}} is a simple L\+I\+FO data structure (last-\/in-\/first-\/out). Here I implement it using linked list as these support fast push / pop from the ends of the list, which is what you\textquotesingle{}ll primarily use with a stack. For illustration, I implemented this class using a \char`\"{}has-\/a\char`\"{} (rather than a \char`\"{}is-\/a\char`\"{} / inheritance) approach. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/stack.\+h\end{DoxyCompactItemize}

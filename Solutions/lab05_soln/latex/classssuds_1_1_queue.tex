@@ -1,0 +1,39 @@
+\hypertarget{classssuds_1_1_queue}{}\section{ssuds\+::Queue$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_queue}\index{ssuds::Queue$<$ T $>$@{ssuds::Queue$<$ T $>$}}
+
+
+{\ttfamily \#include $<$queue.\+h$>$}
+
+Inheritance diagram for ssuds\+::Queue$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_queue}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_queue_a6b7fb3efa5a83edba42e034dc378962f}\label{classssuds_1_1_queue_a6b7fb3efa5a83edba42e034dc378962f}} 
+void \mbox{\hyperlink{classssuds_1_1_queue_a6b7fb3efa5a83edba42e034dc378962f}{push}} (T val)
+\begin{DoxyCompactList}\small\item\em Adds this element to the front of the underlying list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_queue_a3fc08471d690c2d0cca591bc9773b517}\label{classssuds_1_1_queue_a3fc08471d690c2d0cca591bc9773b517}} 
+T \mbox{\hyperlink{classssuds_1_1_queue_a3fc08471d690c2d0cca591bc9773b517}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Removes and returns the element at the end of the list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_queue_a805e78bc8e4ba73d0fa35e387917cbf8}\label{classssuds_1_1_queue_a805e78bc8e4ba73d0fa35e387917cbf8}} 
+T \& \mbox{\hyperlink{classssuds_1_1_queue_a805e78bc8e4ba73d0fa35e387917cbf8}{peek}} ()
+\begin{DoxyCompactList}\small\item\em Return the next item that will be popped (raises an exception if the queue is empty) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_queue_a64a3f334fd662d689ebf97e409743ec9}\label{classssuds_1_1_queue_a64a3f334fd662d689ebf97e409743ec9}} 
+bool \mbox{\hyperlink{classssuds_1_1_queue_a64a3f334fd662d689ebf97e409743ec9}{empty}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the underlying list size is 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Queue$<$ T $>$}
+
+A \mbox{\hyperlink{classssuds_1_1_queue}{Queue}} is a simple F\+I\+FO data structure (first-\/in-\/first-\/out). Here I implement it using linked list as these support fast push / pop from the ends of the list, which is what you\textquotesingle{}ll primarily use with a queue. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/queue.\+h\end{DoxyCompactItemize}

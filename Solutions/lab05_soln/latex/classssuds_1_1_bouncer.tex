@@ -1,0 +1,56 @@
+\hypertarget{classssuds_1_1_bouncer}{}\section{ssuds\+::Bouncer Class Reference}
+\label{classssuds_1_1_bouncer}\index{ssuds::Bouncer@{ssuds::Bouncer}}
+Inheritance diagram for ssuds\+::Bouncer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_bouncer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_af52fc1cb6ad6579b5b6db6222181ccbb}\label{classssuds_1_1_bouncer_af52fc1cb6ad6579b5b6db6222181ccbb}} 
+{\bfseries Bouncer} (float center\+\_\+x, float center\+\_\+y, float radius, float vel\+\_\+x=0.\+0f, float vel\+\_\+y=0.\+0f)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a2e2b57dd32f2a3fcc5b010cb7a97e796}\label{classssuds_1_1_bouncer_a2e2b57dd32f2a3fcc5b010cb7a97e796}} 
+void {\bfseries update} (float dt, int width, int height)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a59b3726818948dba6c319a182cd8ab7e}\label{classssuds_1_1_bouncer_a59b3726818948dba6c319a182cd8ab7e}} 
+void {\bfseries draw\+Bounces} (sf\+::\+Render\+Window \&win, sf\+::\+Font \&font) const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_ac1a381fcc613c099caf51175a0389e4b}\label{classssuds_1_1_bouncer_ac1a381fcc613c099caf51175a0389e4b}} 
+sf\+::\+Vector2f {\bfseries get\+Velocity} () const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aed0cf3caaeed7ef7fb36c3af0faa9fc8}\label{classssuds_1_1_bouncer_aed0cf3caaeed7ef7fb36c3af0faa9fc8}} 
+float {\bfseries get\+Speed} () const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a1af227a0f380a9082cf9cc2c89a70bec}\label{classssuds_1_1_bouncer_a1af227a0f380a9082cf9cc2c89a70bec}} 
+sf\+::\+Vector2f {\bfseries get\+Center} ()
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aec73db25c65dd4d0f2b11945d8def1d8}\label{classssuds_1_1_bouncer_aec73db25c65dd4d0f2b11945d8def1d8}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} \&b) const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_afe7f8df10834601e14404d3046d56563}\label{classssuds_1_1_bouncer_afe7f8df10834601e14404d3046d56563}} 
+bool {\bfseries operator$>$} (const \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} \&b) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_afffe3be534b592137257f8317c24bcba}\label{classssuds_1_1_bouncer_afffe3be534b592137257f8317c24bcba}} 
+sf\+::\+Vector2f {\bfseries m\+Velocity}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_aac9abece6b3859da45ff0bbe4aa2b882}\label{classssuds_1_1_bouncer_aac9abece6b3859da45ff0bbe4aa2b882}} 
+sf\+::\+Vector2f {\bfseries m\+Pos}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_a48771ad9a1a9e0aadf840493653273f1}\label{classssuds_1_1_bouncer_a48771ad9a1a9e0aadf840493653273f1}} 
+int {\bfseries m\+Num\+Bounces}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_bouncer_af4f873779bbafe17b2f2def8b553640d}\label{classssuds_1_1_bouncer_af4f873779bbafe17b2f2def8b553640d}} 
+float {\bfseries m\+Radius}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/bouncer.\+h\item 
+src/bouncer.\+cpp\end{DoxyCompactItemize}

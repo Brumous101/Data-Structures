@@ -1,0 +1,55 @@
+\hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator}{}\section{ssuds\+::Array\+List$<$ T $>$\+::Array\+List\+Iterator Class Reference}
+\label{classssuds_1_1_array_list_1_1_array_list_iterator}\index{ssuds::ArrayList$<$ T $>$::ArrayListIterator@{ssuds::ArrayList$<$ T $>$::ArrayListIterator}}
+
+
+This class is used to iterate through elements of an \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}.  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+list.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_ac04270dc7e378d753e710524d6f2460e}\label{classssuds_1_1_array_list_1_1_array_list_iterator_ac04270dc7e378d753e710524d6f2460e}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_ac04270dc7e378d753e710524d6f2460e}{Array\+List\+Iterator}} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&v, unsigned int start\+\_\+pos, bool is\+\_\+forward)
+\begin{DoxyCompactList}\small\item\em Main (only) constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_af6b60c4c13aafc4adfac67a1d7e74f6a}\label{classssuds_1_1_array_list_1_1_array_list_iterator_af6b60c4c13aafc4adfac67a1d7e74f6a}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_af6b60c4c13aafc4adfac67a1d7e74f6a}{$\sim$\+Array\+List\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor -- nothing needed currently. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a1ce493737f9a4b75c282b32d77d39226}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a1ce493737f9a4b75c282b32d77d39226}} 
+T \& \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a1ce493737f9a4b75c282b32d77d39226}{operator $\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current element\textquotesingle{}s value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_ad5773c320087bba4872892832005320e}\label{classssuds_1_1_array_list_1_1_array_list_iterator_ad5773c320087bba4872892832005320e}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_ad5773c320087bba4872892832005320e}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Iterates (advances) the iterator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_abe82e1a8e5e26286392ecf44eee74cf9}\label{classssuds_1_1_array_list_1_1_array_list_iterator_abe82e1a8e5e26286392ecf44eee74cf9}} 
+bool \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_abe82e1a8e5e26286392ecf44eee74cf9}{operator==}} (const \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Are we equal to another iterator? We are if it\textquotesingle{}s the same vector and if the position is the same. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_af9ad23ff2870463c9fe529a796d8289f}\label{classssuds_1_1_array_list_1_1_array_list_iterator_af9ad23ff2870463c9fe529a796d8289f}} 
+bool \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_af9ad23ff2870463c9fe529a796d8289f}{operator !=}} (const \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} \&i)
+\begin{DoxyCompactList}\small\item\em Are we not equal to the given iterator (just the reverse of ==)...not sure why we need both... \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_a92c5e4aee1664f55e08ff97e3d1ed46d}\label{classssuds_1_1_array_list_1_1_array_list_iterator_a92c5e4aee1664f55e08ff97e3d1ed46d}} 
+const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \& \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_a92c5e4aee1664f55e08ff97e3d1ed46d}{m\+Array}}
+\begin{DoxyCompactList}\small\item\em The reference to the vector we\textquotesingle{}re iterating through. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_ac7660ea19811cb506c31c721ffc09350}\label{classssuds_1_1_array_list_1_1_array_list_iterator_ac7660ea19811cb506c31c721ffc09350}} 
+unsigned int \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_ac7660ea19811cb506c31c721ffc09350}{m\+Position}}
+\begin{DoxyCompactList}\small\item\em The spot we\textquotesingle{}re currently at in the iteration process. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_1_1_array_list_iterator_ab3d57eb6f2648f947aaf899b03f9a1f2}\label{classssuds_1_1_array_list_1_1_array_list_iterator_ab3d57eb6f2648f947aaf899b03f9a1f2}} 
+bool \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator_ab3d57eb6f2648f947aaf899b03f9a1f2}{m\+Is\+Forward}}
+\begin{DoxyCompactList}\small\item\em If true, we increment m\+Position when we iterate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Array\+List$<$ T $>$\+::\+Array\+List\+Iterator}
+
+This class is used to iterate through elements of an \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/array\+\_\+list.\+h\end{DoxyCompactItemize}

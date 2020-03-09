@@ -1,0 +1,136 @@
+\hypertarget{classssuds_1_1_array_list}{}\section{ssuds\+::Array\+List$<$ T $>$ Class Template Reference}
+\label{classssuds_1_1_array_list}\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+
+
+{\ttfamily \#include $<$array\+\_\+list.\+h$>$}
+
+Inheritance diagram for ssuds\+::Array\+List$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classssuds_1_1_array_list}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}}
+\begin{DoxyCompactList}\small\item\em This class is used to iterate through elements of an \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a17073605b1b8e31ca126e61db633c57d}\label{classssuds_1_1_array_list_a17073605b1b8e31ca126e61db633c57d}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_a17073605b1b8e31ca126e61db633c57d}{Array\+List}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor -- allocates ms\+Capacity\+Increase. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_acc8c635fece5189238f20e4df1e9e899}\label{classssuds_1_1_array_list_acc8c635fece5189238f20e4df1e9e899}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_acc8c635fece5189238f20e4df1e9e899}{Array\+List}} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor -- make a copy of the other guy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classssuds_1_1_array_list_ad351338073d3009c376cc41ebd1a3fa1}{Array\+List}} (\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&\&other)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a334e1f8861f34a0da7230aeec7571e3c}\label{classssuds_1_1_array_list_a334e1f8861f34a0da7230aeec7571e3c}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_a334e1f8861f34a0da7230aeec7571e3c}{$\sim$\+Array\+List}} ()
+\begin{DoxyCompactList}\small\item\em The destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \& \mbox{\hyperlink{classssuds_1_1_array_list_a01208c20d1e73244c0ba7876e8f16f45}{operator=}} (const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} \&other)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a0fdcc20f9b6b4d02fcf259ce543e9953}\label{classssuds_1_1_array_list_a0fdcc20f9b6b4d02fcf259ce543e9953}} 
+T \& \mbox{\hyperlink{classssuds_1_1_array_list_a0fdcc20f9b6b4d02fcf259ce543e9953}{operator \mbox{[}$\,$\mbox{]}}} (unsigned int index) const
+\begin{DoxyCompactList}\small\item\em This allows us to do a\mbox{[}0\mbox{]} and similar for Array\+Lists. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classssuds_1_1_array_list_a4e9f0d67b921ddde2da06bdef3012ca8}{capacity}} () const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a29f9aaf226d5c6fde758546102150271}\label{classssuds_1_1_array_list_a29f9aaf226d5c6fde758546102150271}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_a29f9aaf226d5c6fde758546102150271}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Resets the array to its initial (empty) state. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classssuds_1_1_array_list_af435c00e4e53303bc0bbe2cef518d4a7}{find}} (const T \&val, int start\+\_\+index=0) const
+\item 
+void \mbox{\hyperlink{classssuds_1_1_array_list_af22d4711bb7666f9c4706ca491b1fafe}{insert}} (T item, int index)
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_aa12ddd66cdfd7f7f36285c16c5c0a8c7}\label{classssuds_1_1_array_list_aa12ddd66cdfd7f7f36285c16c5c0a8c7}} 
+void \mbox{\hyperlink{classssuds_1_1_array_list_aa12ddd66cdfd7f7f36285c16c5c0a8c7}{push\+\_\+back}} (T item)
+\begin{DoxyCompactList}\small\item\em Appends the given element to the end of the array, resizing if necessary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}\label{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}} 
+T \mbox{\hyperlink{classssuds_1_1_array_list_a4b254608d7f7936f52c9e5430d7cc20f}{remove}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes the element at the given index. It resizes the array if we go ms\+Capacity\+Increase below capacity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_adbcd61184deb92c36610e47b91a7b6d5}\label{classssuds_1_1_array_list_adbcd61184deb92c36610e47b91a7b6d5}} 
+unsigned int \mbox{\hyperlink{classssuds_1_1_array_list_adbcd61184deb92c36610e47b91a7b6d5}{size}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of {\itshape used} slots in the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_abfcec39c654ee0a0d25d033809b1af44}\label{classssuds_1_1_array_list_abfcec39c654ee0a0d25d033809b1af44}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries rbegin} () const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a1b21ab65dae2e027da6d40e1214ebb6c}\label{classssuds_1_1_array_list_a1b21ab65dae2e027da6d40e1214ebb6c}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries begin} () const
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ae89f6f81f6ab34575525ed973c81146d}\label{classssuds_1_1_array_list_ae89f6f81f6ab34575525ed973c81146d}} 
+\mbox{\hyperlink{classssuds_1_1_array_list_1_1_array_list_iterator}{Array\+List\+Iterator}} {\bfseries end} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ad87b3f13b75f7a80dd86e58fb96d19f8}\label{classssuds_1_1_array_list_ad87b3f13b75f7a80dd86e58fb96d19f8}} 
+bool {\bfseries check\+\_\+for\+\_\+capacity} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ae43c344eccee75213eb02e96ea3e300e}\label{classssuds_1_1_array_list_ae43c344eccee75213eb02e96ea3e300e}} 
+T $\ast$ \mbox{\hyperlink{classssuds_1_1_array_list_ae43c344eccee75213eb02e96ea3e300e}{m\+Data}}
+\begin{DoxyCompactList}\small\item\em The dynamically allocated array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a7a7645269c1c140c44f79633d5b19af5}\label{classssuds_1_1_array_list_a7a7645269c1c140c44f79633d5b19af5}} 
+const unsigned int {\bfseries ms\+Capacity\+Increase} = 5
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_ac4487ae34800f88539054c3721568c10}\label{classssuds_1_1_array_list_ac4487ae34800f88539054c3721568c10}} 
+unsigned int {\bfseries m\+Capacity}
+\item 
+\mbox{\Hypertarget{classssuds_1_1_array_list_a8f68ee08bdbaa2f26d017816e4e46e42}\label{classssuds_1_1_array_list_a8f68ee08bdbaa2f26d017816e4e46e42}} 
+unsigned int {\bfseries m\+Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ssuds\+::\+Array\+List$<$ T $>$}
+
+An \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} is similar to (but more simple than) std\+::vector. Behind the scenes is contains a dynamically created array of T objects. This array is resized periodically when we run out of capacity (currently by a fixed amount, although that could be changed to doubling, tripling, if desired -- that would increase the amortized efficiency, but would (drastically) increase the memory footprint). 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classssuds_1_1_array_list_ad351338073d3009c376cc41ebd1a3fa1}\label{classssuds_1_1_array_list_ad351338073d3009c376cc41ebd1a3fa1}} 
+\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}!ArrayList@{ArrayList}}
+\index{ArrayList@{ArrayList}!ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{ArrayList()}{ArrayList()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classssuds_1_1_array_list}{ssuds\+::\+Array\+List}}$<$ T $>$\+::\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}$<$ T $>$ \&\&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This is a new C++11 feature called a \char`\"{}move constructor\char`\"{}. It will get called when we\textquotesingle{}re being asked to create a new \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} as part of a return value. For example, if a function returns an \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}. Pre-\/\+C++11, we\textquotesingle{}d create an \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}} in the function and make a copy (using the copy constructor) above, then immediately destroy the temporary. This sidesteps the unecessary middle step. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classssuds_1_1_array_list_a4e9f0d67b921ddde2da06bdef3012ca8}\label{classssuds_1_1_array_list_a4e9f0d67b921ddde2da06bdef3012ca8}} 
+\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{capacity()}{capacity()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+unsigned int \mbox{\hyperlink{classssuds_1_1_array_list}{ssuds\+::\+Array\+List}}$<$ T $>$\+::capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the number of available slots in the array. Note\+: This is not the same as the number of {\itshape used} slots (that\textquotesingle{}s the size). Once this capacity is reached, we\textquotesingle{}ll do the costly \char`\"{}grow\char`\"{} operation \mbox{\Hypertarget{classssuds_1_1_array_list_af435c00e4e53303bc0bbe2cef518d4a7}\label{classssuds_1_1_array_list_af435c00e4e53303bc0bbe2cef518d4a7}} 
+\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}!find@{find}}
+\index{find@{find}!ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \mbox{\hyperlink{classssuds_1_1_array_list}{ssuds\+::\+Array\+List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{const T \&}]{val,  }\item[{int}]{start\+\_\+index = {\ttfamily 0} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finds the first occurrence of the given index, starting at the given index. -\/1 is returned if that item can\textquotesingle{}t be found \mbox{\Hypertarget{classssuds_1_1_array_list_af22d4711bb7666f9c4706ca491b1fafe}\label{classssuds_1_1_array_list_af22d4711bb7666f9c4706ca491b1fafe}} 
+\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{classssuds_1_1_array_list}{ssuds\+::\+Array\+List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{T}]{item,  }\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Inserts the given element at the given index, shifting everything to the right. Note\+: You can\textquotesingle{}t append using this method (use push\+\_\+back for that) \mbox{\Hypertarget{classssuds_1_1_array_list_a01208c20d1e73244c0ba7876e8f16f45}\label{classssuds_1_1_array_list_a01208c20d1e73244c0ba7876e8f16f45}} 
+\index{ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!ssuds::ArrayList$<$ T $>$@{ssuds::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}\& \mbox{\hyperlink{classssuds_1_1_array_list}{ssuds\+::\+Array\+List}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}$<$ T $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This method is called if the uses says a = b; where a and b are Array\+Lists of the same template type. It makes a copy of b. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/array\+\_\+list.\+h\end{DoxyCompactItemize}

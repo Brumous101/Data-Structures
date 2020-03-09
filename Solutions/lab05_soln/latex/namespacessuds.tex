@@ -1,0 +1,87 @@
+\hypertarget{namespacessuds}{}\section{ssuds Namespace Reference}
+\label{namespacessuds}\index{ssuds@{ssuds}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_queue}{Queue}}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}}
+\item 
+class \mbox{\hyperlink{classssuds_1_1_stack}{Stack}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}{Sorted\+Array\+List\+Type}} \{ {\bfseries I\+N\+C\+R\+E\+A\+S\+I\+NG}, 
+{\bfseries D\+E\+C\+R\+E\+A\+S\+I\+NG}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespacessuds_aaa385f1fa04071f6b537c74e65b6beea}\label{namespacessuds_aaa385f1fa04071f6b537c74e65b6beea}} 
+{\footnotesize template$<$class T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacessuds_aaa385f1fa04071f6b537c74e65b6beea}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}$<$ T $>$ \&a)
+\begin{DoxyCompactList}\small\item\em The stream operator for Array\+Lists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacessuds_ad5e0828821773f33da80209553f10e2f}\label{namespacessuds_ad5e0828821773f33da80209553f10e2f}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classssuds_1_1_bouncer}{Bouncer}} \&b)
+\item 
+\mbox{\Hypertarget{namespacessuds_ad5bd0a2e9d2f90f31b0782584184d3db}\label{namespacessuds_ad5bd0a2e9d2f90f31b0782584184d3db}} 
+{\footnotesize template$<$class T $>$ }\\std\+::ostream \& \mbox{\hyperlink{namespacessuds_ad5bd0a2e9d2f90f31b0782584184d3db}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}$<$ T $>$ \&L)
+\begin{DoxyCompactList}\small\item\em Stream operator definition for our linked list class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{namespacessuds_a636fd424d2a3e918dc8e8e367eb3ae34}{is\+\_\+number}} (std\+::string s, bool include\+\_\+float=false)
+\item 
+int \mbox{\hyperlink{namespacessuds_a3146bc135f96f478eef61482cfe60738}{get\+\_\+integer}} (std\+::string prompt, int fallback\+\_\+val=-\/1)
+\item 
+bool \mbox{\hyperlink{namespacessuds_a0edcd5330a83846b934e542639e1d7a6}{get\+\_\+float}} (std\+::string prompt, float \&value)
+\item 
+\mbox{\Hypertarget{namespacessuds_a9a3ed092ad50d809cf227f25d1295e3d}\label{namespacessuds_a9a3ed092ad50d809cf227f25d1295e3d}} 
+int \mbox{\hyperlink{namespacessuds_a9a3ed092ad50d809cf227f25d1295e3d}{count}} (char c, std\+::string s)
+\begin{DoxyCompactList}\small\item\em Counts the number of occurrences of c in s. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacessuds_a0997aebd2d382353fa6622a2bade3925}{rand\+\_\+float}} (float min, float max, int resolution=1000)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S.\+S.\+U.\+D.\+S. (S\+SU Data Structures) is our data structures implementation of common data structures. In general, these classes are probably less good than the S\+TL equivalents (vectors $>$ \mbox{\hyperlink{classssuds_1_1_array_list}{Array\+List}}, linked\+\_\+list $>$ \mbox{\hyperlink{classssuds_1_1_linked_list}{Linked\+List}}, etc.). There are a few data structures that don\textquotesingle{}t (currently) have a S\+TL equivalent. 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}\label{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}} 
+\index{ssuds@{ssuds}!SortedArrayListType@{SortedArrayListType}}
+\index{SortedArrayListType@{SortedArrayListType}!ssuds@{ssuds}}
+\subsubsection{\texorpdfstring{SortedArrayListType}{SortedArrayListType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacessuds_a21d5ba2a8737547c6ec7c450072498e1}{ssuds\+::\+Sorted\+Array\+List\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+An enum used to identify if this is an increasing-\/order (small to big) or decreasing-\/ order \mbox{\hyperlink{classssuds_1_1_sorted_array_list}{Sorted\+Array\+List}} 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacessuds_a0edcd5330a83846b934e542639e1d7a6}\label{namespacessuds_a0edcd5330a83846b934e542639e1d7a6}} 
+\index{ssuds@{ssuds}!get\_float@{get\_float}}
+\index{get\_float@{get\_float}!ssuds@{ssuds}}
+\subsubsection{\texorpdfstring{get\_float()}{get\_float()}}
+{\footnotesize\ttfamily bool ssuds\+::get\+\_\+float (\begin{DoxyParamCaption}\item[{std\+::string}]{prompt,  }\item[{float \&}]{value }\end{DoxyParamCaption})}
+
+Displays a prompt to cout and asks (using cin) for a float response. If the response entered isn\textquotesingle{}t convertable to a float, this function returns false and doesn\textquotesingle{}t modify value. If it is convertable, return true and assign the typed value to the value parameter. \mbox{\Hypertarget{namespacessuds_a3146bc135f96f478eef61482cfe60738}\label{namespacessuds_a3146bc135f96f478eef61482cfe60738}} 
+\index{ssuds@{ssuds}!get\_integer@{get\_integer}}
+\index{get\_integer@{get\_integer}!ssuds@{ssuds}}
+\subsubsection{\texorpdfstring{get\_integer()}{get\_integer()}}
+{\footnotesize\ttfamily int ssuds\+::get\+\_\+integer (\begin{DoxyParamCaption}\item[{std\+::string}]{prompt,  }\item[{int}]{fallback\+\_\+val = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+Displays a prompt to cout and asks (using cin) for a numeric response. If the response entered isn\textquotesingle{}t convertable to an integer, return the fallback\+\_\+val. \mbox{\Hypertarget{namespacessuds_a636fd424d2a3e918dc8e8e367eb3ae34}\label{namespacessuds_a636fd424d2a3e918dc8e8e367eb3ae34}} 
+\index{ssuds@{ssuds}!is\_number@{is\_number}}
+\index{is\_number@{is\_number}!ssuds@{ssuds}}
+\subsubsection{\texorpdfstring{is\_number()}{is\_number()}}
+{\footnotesize\ttfamily bool ssuds\+::is\+\_\+number (\begin{DoxyParamCaption}\item[{std\+::string}]{s,  }\item[{bool}]{include\+\_\+float = {\ttfamily false} }\end{DoxyParamCaption})}
+
+A function to determine if a given string contains a string convertable to an integer (or a float if the second parameter is true). \mbox{\Hypertarget{namespacessuds_a0997aebd2d382353fa6622a2bade3925}\label{namespacessuds_a0997aebd2d382353fa6622a2bade3925}} 
+\index{ssuds@{ssuds}!rand\_float@{rand\_float}}
+\index{rand\_float@{rand\_float}!ssuds@{ssuds}}
+\subsubsection{\texorpdfstring{rand\_float()}{rand\_float()}}
+{\footnotesize\ttfamily float ssuds\+::rand\+\_\+float (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max,  }\item[{int}]{resolution = {\ttfamily 1000} }\end{DoxyParamCaption})}
+
+Gets a random float between the min and max values. Assumes srand has been called externally Higher resolution values give more decimal places in the output. 
