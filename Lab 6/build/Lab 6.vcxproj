@@ -13,10 +13,12 @@
   <ItemGroup>
     <ClInclude Include="..\include\array_list.h" />
     <ClInclude Include="..\include\bouncer.h" />
+    <ClInclude Include="..\include\critter.h" />
     <ClInclude Include="..\include\utility.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\bouncer.cpp" />
+    <ClCompile Include="..\src\critter.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\utility.cpp" />
   </ItemGroup>

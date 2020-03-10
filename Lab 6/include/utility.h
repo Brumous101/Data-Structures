@@ -26,4 +26,7 @@ namespace ssuds
 	/// Gets a random float between the min and max values.  Assumes srand has been called externally
 	/// Higher resolution values give more decimal places in the output.
 	float rand_float(float min, float max, int resolution = 1000);
+
+	/// Gets a random int between the min and max values.  Assumes srand has been called externally
+	int rand_int(int min, int max);
 }

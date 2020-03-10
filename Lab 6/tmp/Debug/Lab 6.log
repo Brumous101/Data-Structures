@@ -3,6 +3,7 @@
 C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\bouncer.cpp(9,89): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
 C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\bouncer.cpp(9,62): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
 C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\bouncer.cpp(9,35): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
+  critter.cpp
   main.cpp
   utility.cpp
   Generating Code...

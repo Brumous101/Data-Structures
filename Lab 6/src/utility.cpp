@@ -78,3 +78,12 @@ float ssuds::rand_float(float min, float max, int resolution)
 		return 0.0f;
 }
 
+
+
+int ssuds::rand_int(int min, int max)
+{
+	if (min <= max)
+		return rand() % (max - min + 1) + min;
+	else
+		return 0;
+}
