@@ -1,10 +1,10 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (..\tmp\Debug\) contains files shared from another project (lab03_soln.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  bouncer.cpp
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\bouncer.cpp(9,89): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\bouncer.cpp(9,62): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\bouncer.cpp(9,35): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-  critter.cpp
   main.cpp
-  utility.cpp
-  Generating Code...
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(35,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(36,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(37,86): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(37,94): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(42,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(43,9): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\src\main.cpp(44,90): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Lab 6.vcxproj -> C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 6\build\..\bin\Debug\Lab 6.exe

@@ -56,11 +56,12 @@ public:
 	virtual void stop_steering_towards();
 
 	/// Returns true if this is scary (for us, Predators are scary, Prey is not)
-	virtual bool is_scary() const = 0;
+	virtual bool is_scary() const = 0;// Pure virtual
 
 protected:
 	/// This is called by update.  It gives the derived class a chance to update their steering
-	virtual void ai_update(float dt, std::vector<Critter*>& clist, int win_w, int win_h) = 0;
+	virtual void ai_update(float dt, std::vector<Critter*>& clist, int win_w, int win_h) = 0;//Pure virtual
+
 
 public:
 	/// Calls ai_update, then moves the object forward, bouncing off the walls if necessary

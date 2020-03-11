@@ -2,48 +2,48 @@
 #include <array_list.h>
 #include <bouncer.h>
 #include <utility.h>
+#include <critter.h>
+#include <prey.h>
+#include <predator.h>
 
 int main()
 {
-	// Test code for our ArrayList iterator
-	ssuds::ArrayList<std::string> slist;
-	slist.push_back("Abe");
-	slist.push_back("Barb");
-	slist.push_back("Carl");
-	std::cout << "iterator test#1" << std::endl << "===============" << std::endl;
-	ssuds::ArrayList<std::string>::ArrayListIterator slist_iter = slist.begin();
-	while (slist_iter != slist.end())
-	{
-		std::cout << *slist_iter << std::endl;
-		++slist_iter;
-	}
-	std::cout << "iterator test#2" << std::endl << "===============" << std::endl;
-	for (std::string s : slist)
-		std::cout << s << std::endl;
-
-
+	std::vector<Critter*> clist;
+	srand((unsigned int)time(NULL));
 	// SFML main program
 	int win_width = 800;
 	int win_height = 600;
 	bool paused = false;
-	sf::RenderWindow window(sf::VideoMode(win_width, win_height), "ETEC2101 Lab3");
-	ssuds::ArrayList<ssuds::Bouncer> blist;
-	for (int i = 0; i < 100; i++)
-	{
-		float rad = ssuds::rand_float(10.0f, 30.0f);
-		float x = ssuds::rand_float(rad, win_width - rad);
-		float y = ssuds::rand_float(rad, win_height - rad);
-		float vel_x = ssuds::rand_float(-100, 100);
-		float vel_y = ssuds::rand_float(-100, 100);
-		ssuds::Bouncer new_b(x, y, rad, vel_x, vel_y);
-		new_b.setOutlineColor(sf::Color::White);
-		new_b.setOutlineThickness(1.0f);
-		blist.push_back(new_b);
-	}
+	bool debug = false;
 	sf::Clock deltaClock;
 	sf::Font font;
-	font.loadFromFile("..\\media\\Bangers-Regular.ttf");
+	sf::RenderWindow window(sf::VideoMode(win_width, win_height), "ETEC2101 Lab3");
 
+	font.loadFromFile("../media/OdibeeSans-Regular.ttf");
+
+	std::vector<std::string> img_fnames{ "bear", "buffalo", "chick", "chicken", "cow", "crocodile", "dog", "duck", "elephant", "frog", "giraffe", "goat", "gorilla", "hippo", "horse", "monkey", "moose", "narwhal", "owl" ,"panda", "parrot", "penguin", "pig", "rabbit", "rhino", "sloth", "snake", "walrus", "whale", "zebra" };
+	std::vector<sf::Texture> img_tex;
+	for (std::string fn : img_fnames)
+	{
+		sf::Texture t;
+		t.loadFromFile("../media/kenney_animals/" + fn + ".png");
+		img_tex.push_back(t);
+	}
+
+	for (int totalPrey = 0; totalPrey < 80; totalPrey++)
+	{
+		int x = ssuds::rand_float(50, 750);
+		int y = ssuds::rand_float(50, 550);
+		clist.push_back(new ssuds::Prey(x, y, img_tex[ssuds::rand_int(0, img_tex.size() - 1)], 0.2));//goes through all the textures from above
+	}
+
+	for (int totalPredators = 0; totalPredators < 20; totalPredators++)
+	{
+		int x = ssuds::rand_float(50, 750);
+		int y = ssuds::rand_float(50, 550);
+		clist.push_back(new ssuds::Predator(x, y, img_tex[ssuds::rand_int(0, img_tex.size() - 1)], 0.5));//goes through all the textures from above
+
+	}
 
 	// SFML main loop
 	while (window.isOpen())
@@ -51,7 +51,6 @@ int main()
 		sf::Time dt = deltaClock.restart();
 		if (paused)
 			dt = sf::Time::Zero;
-
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
@@ -63,17 +62,22 @@ int main()
 					window.close();
 				else if (event.key.code == sf::Keyboard::P)
 					paused = !paused;
+				else if (event.key.code == sf::Keyboard::F1)
+					debug = !debug;
 			}
 		}
 		if (!window.isOpen())
 			break;
 
 		window.clear();
-		for (ssuds::Bouncer& b : blist)
+		//separate loops and also walk backwards. make i=0 i=size
+		for (int i = 0; i < clist.size(); i++)
 		{
-			b.update(dt.asSeconds(), win_width, win_height);
-			window.draw(b);
-			b.drawBounces(window, font);
+			clist[i]->update(dt.asSeconds(), clist, win_width, win_height);
+		}
+		for (int i = 0; i < clist.size(); i++)
+		{
+			clist[i]->draw(window, debug);
 		}
 		window.display();
 	}
