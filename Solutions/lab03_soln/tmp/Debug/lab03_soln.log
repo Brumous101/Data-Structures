@@ -1,8 +1,0 @@
-﻿  bouncer.cpp
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Solutions\lab03_soln\src\bouncer.cpp(9,89): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Solutions\lab03_soln\src\bouncer.cpp(9,62): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Solutions\lab03_soln\src\bouncer.cpp(9,35): warning C4244: 'argument': conversion from 'float' to 'sf::Uint8', possible loss of data
-  main.cpp
-  utility.cpp
-  Generating Code...
-  lab03_soln.vcxproj -> C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Solutions\lab03_soln\build\..\bin\Debug\lab03_soln.exe

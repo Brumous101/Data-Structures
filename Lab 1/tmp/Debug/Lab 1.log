@@ -1,4 +1,0 @@
-﻿  Manager.cpp
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 1\src\Manager.cpp(148,47): warning C4244: 'argument': conversion from 'float' to 'short', possible loss of data
-C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 1\src\Manager.cpp(151,94): warning C4244: 'argument': conversion from 'float' to 'short', possible loss of data
-  Lab 1.vcxproj -> C:\Users\Brumo\Desktop\git\masters\Assignments\Data Structures\Lab 1\build\..\bin\Debug\Lab 1.exe
