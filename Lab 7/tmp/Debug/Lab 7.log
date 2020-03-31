@@ -1,0 +1,10 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (..\tmp\Debug\) contains files shared from another project (Lab 6.vcxproj, lab03_soln.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\include\heap.h(162,21): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\include\heap.h(157): message : while compiling class template member function 'int ssuds::Heap<ssuds::Line>::compareChildren(int)'
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\include\heap.h(115): message : see reference to function template instantiation 'int ssuds::Heap<ssuds::Line>::compareChildren(int)' being compiled
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\src\main.cpp(45): message : see reference to class template instantiation 'ssuds::Heap<ssuds::Line>' being compiled
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\include\heap.h(167,21): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\include\heap.h(155): warning C4715: 'ssuds::Heap<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::pop': not all control paths return a value
+C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\include\heap.h(155): warning C4715: 'ssuds::Heap<ssuds::Line>::pop': not all control paths return a value
+  Lab 7.vcxproj -> C:\Users\Brumo\Desktop\git\masters\Assignments\Data-Structures\Lab 7\build\..\bin\Debug\Lab 7.exe
